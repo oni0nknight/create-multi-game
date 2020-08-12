@@ -1,0 +1,22 @@
+html {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #474747;
+    height: 100%
+}
+
+#app-container {
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;
+    position: relative;
+}
+
+canvas {
+    border-radius: 15px;
+}

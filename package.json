@@ -1,0 +1,45 @@
+{
+  "name": "create-multi-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "nodemon server/server.js --exec node",
+    "server": "node server/server.js",
+    "prebuild-client": "rm -rf client/dist",
+    "build-client": "parcel build client/*.html -d client/dist --no-source-maps",
+    "prestart-client": "rm -rf client/dist",
+    "start-client": "parcel client/*.html -d client/dist",
+    "lint": "eslint server/ client/js/"
+  },
+  "keywords": [],
+  "author": "Theophile Gindre",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.9.11",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.50",
+    "@types/react": "^16.9.34",
+    "chalk": "^4.0.0",
+    "express": "^4.17.1",
+    "lodash.get": "^4.4.2",
+    "lodash.shuffle": "^4.2.0",
+    "mustache": "^4.0.1",
+    "phaser": "^3.22.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "nodemon": "^2.0.3"
+  }
+}
